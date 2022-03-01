@@ -1,0 +1,56 @@
+1. Why are functions advantageous to have in your programs?
+-reuse
+-modular
+-systematic
+
+2. When does the code in a function run: when it's specified or when it's called?
+it will through syntax error
+
+3. What statement creates a function?
+def functionName():
+
+4. What is the difference between a function and a function call?
+function is where we define what function will do. Callng a function is were it will execute the code inside it.
+
+5. How many global scopes are there in a Python program? How many local scopes?
+one global Python scope per program execution. They can be n nmber of local scopes depednig on how many functions are there.
+
+6. What happens to variables in a local scope when the function call returns?
+The local variables are destroyed.
+
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+The value that a function returns to the caller is generally known as the function's return value. 
+Yes its possible but it will retrun a calculated value when reurned.
+ex: 
+def add(a, b):
+    return a + b
+print(add(2, 2))
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+None is the value when no return is present
+
+9. How do you make a function variable refer to the global variable?
+use the global keyword to declare which variables are global
+x= 'firstValue'
+def myfunc():
+  global x
+  x = "dhanesh"
+myfunc()
+print("Python is " + x)
+
+10. What is the data type of None?
+NoneType
+
+11. What does the sentence import areallyourpetsnamederic do?
+it will import the module areallyourpetsnamederic
+
+12. If you had a bacon() feature in a spam module, what would you call it after importing spam?
+import spam
+spam.bacon()
+
+13. What can you do to save a programme from crashing if it encounters an error?
+us eception handling by using try and except
+
+14. What is the purpose of the try clause? What is the purpose of the except clause?
+try clasue is used to exceute our code and except clause is used to catch the exception.
+
