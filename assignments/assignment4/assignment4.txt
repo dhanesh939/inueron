@@ -1,0 +1,77 @@
+1. What exactly is []?
+--> This represents empty list.
+
+2. In a list of values stored in a variable called spam, 
+how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+-->
+spam = [2,4,6,8,10]
+spam.insert(2,'hello')
+print(spam)
+output --> [2, 4, 'hello', 6, 8, 10]
+
+Let's pretend the spam includes the list ['a', 'b', 'c', 'd'] for the next three queries.
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+--> d
+4. What is the value of spam[-1]?
+--> 'd'
+5. What is the value of spam[:2]?
+--> ['a','b']
+
+Let's pretend bacon has the list [3.14, 'cat,' 11, 'cat,' True] for the next three questions.
+6. What is the value of bacon.index('cat')?
+--> 1
+7. How does bacon.append(99) change the look of the list value in bacon?
+--> [3.14, 'cat', 11, 'cat', True, 99]
+8. How does bacon.remove('cat') change the look of the list in bacon?
+--> [3.14, 11, 'cat', True, 99]
+
+9. What are the list concatenation and list replication operators?
+--> Concatenation + 
+list_one = [0, 1, 2]
+list_two = [4 , 5, 6]
+result = list_one + list_two
+print(result)
+output --> [0,1,2,4,5,6]
+
+--> Replication *
+list1 = [1, 2, 3, 4]
+list2 = list1 * 3
+print(list2)
+output --> [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4]
+
+10. What is difference between the list methods append() and insert()?
+--> append() it appends to the end of list
+--> insert() it inserts into the list at given index example list2.insert(2, 25)
+
+11. What are the two methods for removing items from a list?
+pop(index) and remove(value that needs to be removed)
+
+12. Describe how list values and string values are identical.
+--> Strings can be defined as sequential collections of characters. 
+This means that the individual characters that make up a string are in a particular order from left to right.
+A list is a sequential collection of Python data values, where each value is identified by an index. 
+The values that make up a list are called its elements. 
+Lists are similar to strings, which are ordered collections of characters, except that the elements of a list can 
+have any type and for any one list, the items can be of different types.
+
+13. What's the difference between tuples and lists?
+--> Tuples once set it can not be changed, where as list can be manupluated.
+
+14. How do you type a tuple value that only contains the integer 42?
+-->
+t = (42,)
+print(type(t))
+<class 'tuple'>
+
+15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+list to tuple --> tuple(list1)
+tuple to list --> list(tuple1)
+
+16. Variables that "contain" list values are not necessarily lists themselves. Instead, what do they contain?
+Variables will contain references to list values rather than list values themselves
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+A shallow copy constructs a new compound object and then (to the extent possible) inserts references into it to 
+the objects found in the original. A deep copy constructs a new compound object and then, recursively, inserts 
+copies into it of the objects found in the original.
+
