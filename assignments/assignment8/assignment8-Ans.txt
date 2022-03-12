@@ -1,0 +1,23 @@
+1. Is the Python Standard Library included with PyInputPlus?
+-->Its not inculed.
+
+2. Why is PyInputPlus commonly imported with import pyinputplus as pypi?
+--> its used for capturing used input
+
+3. How do you distinguish between inputInt() and inputFloat()?
+--> for int() if float is given it will trow an erorr saying the "value" is not integer
+ex: 4.3 will give '4.3' is not an integer.
+For inputFloat() it will accept interger value but it will convert the int to float.
+ex: 4 will give '4.0'
+
+4. Using PyInputPlus, how do you ensure that the user enters a whole number between 0 and 99?
+--> use inputInt()
+
+5. What is transferred to the keyword arguments allowRegexes and blockRegexes?
+--> regex string
+
+6. If a blank input is entered three times, what does inputStr(limit=3) do?
+--> it gives error if it you enter more then 3 banks. Blank values are not allowed.
+
+7. If blank input is entered three times, what does inputStr(limit=3, default=&#39;hello&#39;) do?
+--> it gives the erorr messgae that is passed in the defualt
